@@ -72,40 +72,7 @@ src/
 
 ---
 
-## 🧾 Example Entities
 
-### **Order**
-@Entity
-public class Order {
-    @Id @GeneratedValue
-    private Long id;
-
-    @ManyToOne
-    private User user;
-
-    @Enumerated(EnumType.STRING)
-    private OrderStatus status;
-
-    @OneToMany(mappedBy = "order", cascade = CascadeType.ALL)
-    private List<OrderItem> items;
-
-    private Double totalPrice;
-
-    private String paymentId; // Stripe Payment ID
-}
-
-### **Ingredient**
-@Entity
-public class Ingredient {
-    @Id @GeneratedValue
-    private Long id;
-    private String name;
-
-    @ManyToMany(mappedBy = "ingredients")
-    private List<Food> foods;
-}
-
----
 
 ## ⚙️ How to Run the Project
 
@@ -116,17 +83,17 @@ mvn spring-boot:run
 ### **Frontend**
 cd frontend  
 npm install  
-npm run dev  
+npm start  
 
 Backend: http://localhost:8080  
-Frontend: http://localhost:5173  
+Frontend: http://localhost:3000  
 
 Ensure you set your Stripe API keys in the backend configuration (e.g. application.properties).
 
 ---
 
 ## 📸 Preview  
-_Add screenshots of key pages here:_
+
 
 ![Homepage Screenshot](screenshots/home.png)  
 ![Cart and Checkout](screenshots/checkout.png)  
