@@ -95,9 +95,9 @@ Ensure you set your Stripe API keys in the backend configuration (e.g. applicati
 ## 📸 Preview  
 
 
-![Homepage Screenshot](screenshots/home.png)  
-![Cart and Checkout](screenshots/checkout.png)  
-![Admin Dashboard](screenshots/HomeAdmin.png)
+![Homepage Screenshot](Screenshots/home.png)  
+![Cart and Checkout](Screenshots/checkout.png)  
+![Admin Dashboard](Screenshots/HomeAdmin.png)
 
 ---
 
